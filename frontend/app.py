@@ -1,4 +1,9 @@
+import os
+import sys
 import streamlit as st
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from backend.engine import estimate_cost
 
 st.title("💸 TrueCost AI")
